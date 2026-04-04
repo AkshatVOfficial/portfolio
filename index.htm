@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Momo+Signature&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<script src="script.js"></script>
+
+<body>
+    <header 
+    class="navbar">
+        <h1>Akshat Verma</h1>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <!-- targeting the left sections of the page -->
+        <section id="left">
+            <h2 class="about">About Me</h2>
+            <div class="photo-card">
+                <img src="images/pp3.jpg" alt="Akshat" class="profile">
+                <div class="photo-text">
+                    <img src="images/smile.png" class="sticker smile" alt="smile doodle" >
+                    <img src="images/fire.png" class="sticker fire" alt="fire doodle">
+                    <p class="age">20 YEARS</p>
+                    <p class="nationality">Nationality: <br> Indian</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- targeting the right section of the page -->
+        <section id="right">
+            <h2 class="hi">HI!!</h2>
+            <p class="intro1">My name is Akshat Verma, I'm a Webdeveloper from UP(India).</p>
+            <p class="intro2"><span>Ever since</span>
+                I remember I've always had a special interest in creativity, either if its an idea or a project, I
+                always try to make it creative and unique from simple sketch to the most elaborated project.
+            </p>
+            <p class="intro3"><span>I live to</span>
+                discover and experience creative ways to express myself and do it for others.
+            </p>
+
+            <button class="more" onclick="changeText(this)">
+                To know more
+            </button>
+        </section>
+    </main>
+
+    <br>
+    <!-- project section  -->
+     
+    <section id="projects">
+    <h2 class="projects-title">My Projects</h2>
+
+    <div class="projects-container">
+
+        <div class="project-card">
+            <img src="images/portfolio.png" alt="project">
+            <h3>Portfolio Website</h3>
+            <p>This portfolio built using HTML & CSS with responsive design.</p>
+            <a href="#" target="_blank">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <img src="images/landingpage.png" alt="project">
+            <h3>Landing Page</h3>
+            <p>A modern landing page layout with responsive UI.</p>
+            <a href="#" target="_blank">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <img src="images/comingsoon.png" alt="project">
+            <h3>Coming Soon</h3>
+            <p>More creative projects are on the way.</p>
+            <a href="#">Coming Soon</a>
+        </div>
+
+    </div>
+</section>
+
+    <!-- this is the bottom area where i've put contacts and profile -->
+    <footer>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=akshatvermaofficial@gmail.com" target="_blank"
+            rel="noopener noreferrer">Gmail</a>
+        <a href="https://wa.me/919758686726?text=Hello Akshat!" target="_blank" rel="noopener noreferrer">Phone</a>
+        <a href="https://www.instagram.com/ezphemous/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://X.com/ezphemous" target="_blank" rel="noopener noreferrer">X</a>
+        <a href="https://www.linkedin.com/in/add user here" target="_blank" rel="noopener noreferrer">Linkdedin</a>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,309 @@
+body {
+    color: aliceblue;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+/* this is the header section aka navbar */
+.navbar {
+    color: white;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.nav-links {
+    padding-right: 15px;
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+a:hover {
+    color: rgb(255, 51, 0);
+}
+
+main {
+    display: flex;
+}
+
+/* left side of the page */
+#left {
+    width: 40%;
+    position: relative;
+    padding-left: 10%;
+}
+
+.about {
+    transform: rotate(-5deg);
+    font-size: 3vw;
+    font-family: "Momo Signature", cursive;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.photo-card {
+    position: relative;
+    display: inline-block;
+}
+
+.profile {
+    max-width: 100%;
+    height: auto;
+    width: 20vw;
+    background: aliceblue;
+    padding: 10px 10px 60px 10px;
+    transform: rotate(-5deg);
+}
+
+/* text inside frame */
+.photo-text {
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+    width: calc(100% - 40px);
+    /* IMPORTANT */
+
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    color: black;
+    font-weight: bold;
+    transform: rotate(-5deg);
+    font-family: "Lora", serif;
+}
+
+.sticker {
+    position: absolute;
+    width: 15vw;
+    pointer-events: none;
+    /* so it doesn't block clicks */
+}
+
+/* specific fire position */
+.fire {
+    top: -6vw;
+    left: 13vw;
+    transform: rotate(-9deg);
+    filter: drop-shadow(0 0 10px rgba(166, 24, 24, 0.747));
+}
+
+.smile {
+    top: -25vw;
+    left: -9vw;
+    transform: rotate(-7deg);
+    filter: drop-shadow(0 0 10px rgba(166, 24, 24, 0.747));
+}
+
+#right {
+    width: 60%;
+    padding-right: 5vw;
+    max-width: 600px;
+    /* IMPORTANT */
+}
+
+.hi {
+    font-size: 5rem;
+    margin-bottom: 0px
+}
+
+span {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+}
+
+.intro1,
+.intro2,
+.intro3 {
+    font-size: 1.3rem;
+}
+
+.intro2,
+.intro3 {
+    width: auto;
+    padding-left: 0;
+}
+
+.more {
+    margin-top: 20px;
+    width: fit-content;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border-radius: 7px;
+    font-weight: bold;
+    border: 0px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.more:hover {
+    background-color: red;
+    color: white;
+}
+
+/* project */
+/* PROJECT SECTION */
+#projects {
+    padding: 65px 20px 30px 20px;
+    text-align: center;
+}
+
+.projects-title {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-family: cursive;
+}
+
+/* CONTAINER */
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* CARD */
+.project-card {
+    background-color: #111;
+    border-radius: 15px;
+    width: 260px;
+    padding: 15px;
+    transition: 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* IMAGE */
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* TEXT */
+.project-card h3 {
+    margin: 10px 0;
+}
+
+.project-card p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* LINK BUTTON */
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* HOVER EFFECT */
+.project-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.493);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 60px;
+    margin-top: 40px;
+    padding: 20px;
+    opacity: 0.8;
+}
+
+/* media queries */
+
+@media (max-width: 768px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-links {
+        gap: 70px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #left {
+        width: 50%;
+    }
+
+    .about {
+        font-size: 5vw;
+        transform: rotate(0deg);
+    }
+
+    .profile {
+        max-width: 100%;
+        height: auto;
+        width: 40vw;
+        background: aliceblue;
+        padding: 7px 7px 60px 7px;
+        transform: rotate(0deg);
+    }
+
+    .photo-text {
+        transform: rotate(0deg);
+    }
+
+    .fire {
+        top: -8vw;
+        left: 27vw;
+        width: 25vw;
+    }
+
+    .smile {
+        top: -46vw;
+        left: -16vw;
+        width: 26vw;
+    }
+
+    #right {
+        width: 90%;
+        padding: 0;
+    }
+
+    .more {
+        display: flex;
+        margin: auto;
+    }
+
+    /* project  */
+
+    #projects {
+        padding: 40px 10px;
+    }
+
+    .projects-title {
+        font-size: 2rem;
+    }
+
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        margin-top: 30px;
+        gap: 40px;
+    }
+
+}
