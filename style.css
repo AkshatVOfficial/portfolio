@@ -403,10 +403,12 @@ footer {
     /* PROJECT SECTION */
     .projects {
         padding: 30px 10px;
+        
     }
 
     .projects-title {
         font-size: 1.8rem;
+        margin: auto;
     }
 
     .projects-container {
